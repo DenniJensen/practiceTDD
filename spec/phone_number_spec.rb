@@ -1,4 +1,4 @@
-require_relative '../phone_number'
+require_relative '../lib/phone_number'
 
 describe '#check_phone_numbers' do
  it 'returns true if no numbers are passed' do

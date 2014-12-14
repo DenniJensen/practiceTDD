@@ -1,4 +1,4 @@
-require_relative '../isbn'
+require_relative '../lib/isbn'
 
 describe '#validate_isbn' do
   it 'returns true for an all-zero ISBN' do
