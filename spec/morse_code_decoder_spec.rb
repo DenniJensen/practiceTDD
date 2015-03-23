@@ -5,6 +5,7 @@ describe MorseCodeDecoder do
 
   describe '.decode_morse' do
     it 'returns human readable text' do
+      morse = '.... . -.--   .--- ..- -.. .'
       expect(decoder.decode_morse(morse)).to eq 'HEY JUDE'
     end
   end
