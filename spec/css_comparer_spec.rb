@@ -14,10 +14,15 @@ describe CSS::Comparer do
       expect(comparer.compare('#id', '.class')).to eq '#id'
     end
 
-    context 'no whitespace' do
+    context 'without whitespaces between selector' do
       it 'compares selector and class vs class' do
         expect(comparer.compare('div.class', '.class')).to eq 'div.class'
         expect(comparer.compare('.class', 'div.class')).to eq 'div.class'
+      end
+
+      it 'compares div#id vs div.class' do
+        expect(comparer.compare('div.class', 'div#id')).to eq 'div#id'
+        expect(comparer.compare('div#id', 'div.class')).to eq 'div#id'
       end
     end
   end
