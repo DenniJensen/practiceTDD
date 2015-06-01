@@ -1,9 +1,8 @@
 
 def get_winner(match)
-  partions = match.uniq
-  score_table = Hash.new(0)
-  partions.each {|partion|  score_table[partion] = match.count(partion)}
-  p score_table
-  p score_table.max_by{|key, value| value }
-  score_table.max_by{|key, value| value }.first
+  score_table = {}
+  match.uniq.each {|partion|  score_table[partion] = match.count(partion)}
+  first = score_table.max_by{|key, value| value }
+  return first.first if first[1] > match.count * 0.5
+  nil
 end
