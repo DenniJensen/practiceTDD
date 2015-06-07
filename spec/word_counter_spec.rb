@@ -1,4 +1,4 @@
-require './word_counter'
+require 'word_counter'
 
 describe WordCounter do
   let(:word_counter) { WordCounter.new }

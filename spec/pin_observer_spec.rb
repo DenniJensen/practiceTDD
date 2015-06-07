@@ -1,4 +1,4 @@
-require_relative '../pin_observer'
+require 'pin_observer'
 require 'pry'
 
 describe PinObserver do

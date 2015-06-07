@@ -1,4 +1,4 @@
-require './winner'
+require 'winner'
 
 describe '#get_winner' do
   let(:match_1) { ['A', 'A', 'B'] }

@@ -1,4 +1,4 @@
-require './morse_code_decoder'
+require 'morse_code_decoder'
 
 describe MorseCodeDecoder do
   let(:decoder) { MorseCodeDecoder.new }

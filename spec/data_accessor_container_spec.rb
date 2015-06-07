@@ -1,5 +1,4 @@
-require 'spec_helper'
-require './data_accessor_container'
+require 'data_accessor_container'
 
 describe DataAccessorContainer do
   let(:data_container) { DataAccessorContainer.new }

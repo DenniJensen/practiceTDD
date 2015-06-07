@@ -1,5 +1,5 @@
 require 'spec_helper'
-require './css_comparer'
+require 'css_comparer'
 
 describe CSS::Comparer do
   let(:comparer) { CSS::Comparer.new }
