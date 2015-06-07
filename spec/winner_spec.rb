@@ -14,10 +14,10 @@ describe '#get_winner' do
   it 'detects the winner' do
     expect(get_winner(match_1)).to eq 'A'
     expect(get_winner(match_3)).to eq 'B'
+    expect(get_winner(special_case)).to eq 'Boss'
   end
 
   it 'cannot detect a winner on even result' do
     expect(get_winner(match_2)).to eq nil
-    expect(get_winner(special_case)).to eq nil
   end
 end

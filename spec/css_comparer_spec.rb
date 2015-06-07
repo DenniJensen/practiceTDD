@@ -24,8 +24,6 @@ describe CSS::Comparer do
         expect(comparer.compare('div.class', 'div#id')).to eq 'div#id'
         expect(comparer.compare('div#id', 'div.class')).to eq 'div#id'
       end
-
-
     end
   end
 end
